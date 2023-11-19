@@ -1,5 +1,5 @@
 .page__login {
-  padding-top: 80px;
+  padding-top: 69px;
   margin: 0 auto;
   width: 400px;
 }
@@ -36,8 +36,8 @@
 }
 
 .login__title {
-  margin: 45px 0;
-  font-size: 26px;
+  margin: 39px 0;
+  font-size: 24px;
   font-weight: 500;
   line-height: normal;
   color: var(--main-font-color);

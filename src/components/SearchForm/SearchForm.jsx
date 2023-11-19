@@ -17,7 +17,8 @@ export default function SearchForm() {
                 <button type='button' className='searchForm__button'></button>
             </div>
             <div className="search__filter-container">
-          <FilterCheckbox isFilter={isFilter} onChange={handleFilterChange} />
+              <form>
+          <FilterCheckbox isFilter={isFilter} onChange={handleFilterChange} /></form>
           <p className="search__filter-title">Короткометражки</p></div>
 
         </section>

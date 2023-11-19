@@ -43,6 +43,7 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 29px;
+    cursor: pointer;
 }
 
 @media screen and (max-width:1023px) {

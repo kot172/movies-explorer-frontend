@@ -60,17 +60,16 @@ export default function Header({ name, loggedIn }) {
               </li>
               
               <li className='header__link-container'>
+                <div className="header__link-caption">
                 <Link to={'/movies'}
                   className={`header__link ${pathname === '/movies' ? 'header__link_active' : ''}`}
                   onClick={clickLink}
                 >Фильмы</Link>
-              </li>
-              <li className='header__link-container'>
                 <Link
                   to={'/saved-movies'}
                   className={`header__link ${pathname === '/saved-movies' ? 'header__link_active' : ''}`}
                   onClick={clickLink}
-                >Сохранённые фильмы</Link>
+                >Сохранённые фильмы</Link></div>
               </li>
               <li className='header__link-container'>
                 <Link

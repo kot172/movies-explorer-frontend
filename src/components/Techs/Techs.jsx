@@ -3,10 +3,10 @@ import './Techs.css'
 export default function Techs() {
 
     return(
-        <section className='techs'>
+        <section className='techs' id='Techs'>
             <div className='techs__info'>
             <h2 className='techs__title'>Технологии</h2>
-            <p className='techs__text'>7 технологий</p>
+            <h3 className='techs__text'>7 технологий</h3>
             <p className='techs__caption'>На курсе веб-разработки мы освоили технологии,
              которые применили <br></br>в дипломном проекте.</p>
              <ul className='techs__container'>

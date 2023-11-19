@@ -5,6 +5,12 @@
     margin-top: 107px;
 }
 
+a{
+    cursor: pointer;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 .footer__container {
     width: 89%;
 }
@@ -39,7 +45,6 @@
 
     .footer {
         margin: 0;
-        width: 70%;
     }
 
     .footer__caption {

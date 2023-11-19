@@ -7,11 +7,15 @@ export default function Portfolio() {
 <p className='portfolio__caption'>Портфолио</p>
 <ul className='portfolio__link'>
 <li className='portfolio__link-caption'>
-    Статичный сайт<button className='portfolio__link-btn'></button></li>
+       Статичный сайт
+       <a className='portfolio__link-btn' target='_blank' href='https://github.com/kot172/how-to-learn'>
+        </a></li>
 <li className='portfolio__link-caption'>
-    Адаптивный сайт <button className='portfolio__link-btn'></button></li>
+    Адаптивный сайт <a className='portfolio__link-btn' target='_blank' href='https://github.com/kot172/russian-travel'>
+        </a></li>
 <li className='portfolio__link-caption'>
-    Одностраничное приложение <button className='portfolio__link-btn'></button></li></ul>
+    Одностраничное приложение <a className='portfolio__link-btn' target='_blank' href='https://github.com/kot172/react-mesto-auth'>
+        </a></li></ul>
         </section>
     )
 }

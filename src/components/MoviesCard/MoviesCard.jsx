@@ -18,11 +18,11 @@ export default function MoviesCard({ name, src, trailerLink }) {
     <li className='gallery__card'>
       <article>
         <Link to={trailerLink} target='_blank'>
-          <img src={src} alt="#" className='gallery__image' />
+          <img src={src} alt={src} className='gallery__image' />
         </Link>
         <div className='gallery__card-group'>
           <div className='gallery__text-group'>
-            <p className='gallery__subtitle'>{name}</p>
+            <h2 className='gallery__subtitle'>{name}</h2>
             <span className='gallery__duration'>1ч 47м</span>
           </div>
           {pathname === '/movies' ?

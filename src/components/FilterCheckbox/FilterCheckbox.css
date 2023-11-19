@@ -1,7 +1,7 @@
 .checkbox {
     display: inline-flex;
-    --width: 34px;
-    --height: 14px;
+    --width: 36px;
+    --height: 21px;
     --offset: 2px;
     --duration: 0.3s cubic-bezier(0.47, 1.64, 0.41, 0.8),
       background-color 0.2s linear;
