@@ -28,8 +28,8 @@
     list-style-type: none;
     border-bottom: 1px solid #424242;
     padding-bottom: 19px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 .portfolio__link-caption:last-child {
@@ -37,18 +37,33 @@
 }
 
 .portfolio__link-btn {
+
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio__link-text {
+    margin: 0;
+}
+
+.portfolio__link-cursor {
     background-image: url(../../strelka_link.svg);
+    width: 29px;
+    height: 29px;
     background-color: inherit;
     border: none;
     background-repeat: no-repeat;
     background-position: center;
-    width: 29px;
-    cursor: pointer;
 }
+
 
 @media screen and (max-width:1023px) {
     .portfolio {
         width: 87%;
+        margin-bottom: 104px;
     }
 
     .portfolio__caption {
@@ -67,17 +82,17 @@
         padding: 70px 0 0 0;
     }
 
-.portfolio__link{
-    margin:42px 0 0 0;
-}
+    .portfolio__link {
+        margin: 42px 0 0 0;
+    }
 
-    .portfolio__link-caption{
+    .portfolio__link-caption {
         font-size: 17px;
         line-height: 28px;
     }
 
-    .portfolio__link-btn{
-        width: 18px;
-        height: 28px;
+    .portfolio__link-btn {
+        /* width: 18px;
+        height: 28px; */
     }
 }
