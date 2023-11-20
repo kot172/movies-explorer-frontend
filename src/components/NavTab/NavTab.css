@@ -1,0 +1,34 @@
+.navTab {
+    background: #272727;
+    width: 100%;
+}
+
+.navTab__block {
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.navTab__text {
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+    .navTab__block{
+        
+        gap: 25px;
+    }
+
+    .navTab__text{
+        font-size: 11px;
+        line-height: 16px;
+    }
+}
