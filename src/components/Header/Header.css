@@ -12,7 +12,7 @@
     }
   }
   
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:767px) {
     .page__header {
       padding-left: 14px;
       padding-right: 12px;
@@ -43,7 +43,7 @@
   
   @media screen and (max-width:768px) {
     .header__links-container {
-      padding-top: 24px;
+      padding-top: 20px;
     }
   }
 
@@ -73,7 +73,7 @@
     cursor: pointer;
   }
   
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:767px) {
     .header__signup {
       margin-right: 14px;
       font-size: 10px;
@@ -98,7 +98,7 @@
     transition: opacity .3s linear;
   }
   
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:767px) {
     .header__signin {
       padding-top: 4px;
       width: 54px;

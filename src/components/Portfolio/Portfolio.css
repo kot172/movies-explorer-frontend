@@ -2,6 +2,7 @@
     background-color: #202020;
     color: #ffffff;
     width: 89%;
+    padding-bottom: 27px;
 }
 
 .portfolio__caption {
@@ -23,13 +24,11 @@
 
 .portfolio__link-caption {
     font-weight: 400;
-    font-size: 26px;
+    font-size: 28px;
     line-height: 50px;
     list-style-type: none;
     border-bottom: 1px solid #424242;
     padding-bottom: 19px;
-    /* display: flex;
-    justify-content: space-between; */
 }
 
 .portfolio__link-caption:last-child {
@@ -63,11 +62,15 @@
 @media screen and (max-width:1023px) {
     .portfolio {
         width: 87%;
-        margin-bottom: 104px;
+        margin-bottom: 76px;
     }
 
     .portfolio__caption {
         padding: 91px 0 0 0;
+    }
+
+    .portfolio__link-caption{
+        font-size: 26px;
     }
 }
 

@@ -5,9 +5,10 @@
   
   @media screen and (max-width: 1023px) {
     .page__card {
-      padding-top: 83px;
+      padding-top: 78px;
       padding-left: 30px;
       padding-right: 30px;
+      padding-bottom: 109px;
     }
   }
   
@@ -16,6 +17,7 @@
       padding-top: 50px;
       padding-left: 10px;
       padding-right: 10px;
+      padding-bottom: 136px;
     }
   }
   
@@ -37,6 +39,7 @@
   @media screen and (max-width: 1279px) {
     .card__lists {
       max-width: 1023px;
+      padding-bottom: 88px;
     }
   }
   
@@ -54,8 +57,9 @@
     .card__lists {
       grid-template-columns: repeat(auto-fit, 300px);
       column-gap: 30px;
-      row-gap: 19px;
+      row-gap: 15px;
       max-width: 300px;
+      padding-bottom: 77px;
     }
   }
   
@@ -73,11 +77,12 @@
     background-color: #2f2f2f;
     color: #ffffff;
     cursor: pointer;
+    border-radius: 6px;
   }
   
   @media screen and (max-width: 767px) {
     .card__more {
-      width: 240px;
+      width: 300px;
       height: 36px;
     }
   }
