@@ -8,7 +8,7 @@
     width: 410px;
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .page__profile {
       padding-top: 236px;
     }
@@ -30,7 +30,7 @@
     color: var(--main-font-color);
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .profile__title {
       margin-bottom: 95px;
     }

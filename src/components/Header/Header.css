@@ -41,9 +41,9 @@
     align-items: center;
   }
   
-  @media screen and (max-width:767px) {
+  @media screen and (max-width:768px) {
     .header__links-container {
-      padding-top: 24px;
+      padding-top: 20px;
     }
   }
 
@@ -51,6 +51,16 @@
     display: flex;
     gap: 16px;
   }
+
+  @media screen and (max-width:768px) {
+    .header__link-caption {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    }
+  }
+
   
   .header__signup {
     margin-right: 30px;
@@ -103,7 +113,7 @@
     transition: width .2s linear, visibility .2s linear;
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .header__nav {
       visibility: hidden;
       position: fixed;
@@ -128,7 +138,7 @@
     margin-left: 45px;
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .header__links-container_type_page {
       box-sizing: border-box;
       width: 520px;
@@ -154,7 +164,7 @@
     margin-right: 3px;
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .header__link-container:last-of-type {
       flex: 1;
       display: flex;
@@ -167,7 +177,7 @@
     margin-right: 13px;
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .header__link-container:nth-of-type(2) {
       margin: 0;
       margin-bottom: 28px;
@@ -184,7 +194,7 @@
     display: none;
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .header__link-container:first-of-type {
       display: block;
       margin-bottom: 31px;
@@ -206,7 +216,7 @@
     transition: opacity .3s linear;
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .header__link {
       padding-bottom: 4px;
       font-size: 18px;
@@ -222,7 +232,7 @@
     align-self: flex-end;
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .header__link_type_acc {
       font-size: 13px;
       font-weight: 500;
@@ -235,7 +245,7 @@
     font-weight: 500;
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .header__link_active {
       border-bottom: 1px solid var(--main-font-color);
     }
@@ -265,7 +275,7 @@
     transition: opacity .3s linear;
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .header__burger {
       display: block;
     }
@@ -288,7 +298,7 @@
     transition: opacity .3s linear;
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .header__burger-close {
       display: block;
     }

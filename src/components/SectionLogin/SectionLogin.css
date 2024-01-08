@@ -8,15 +8,16 @@
   text-align: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .page__login {
-    padding-top: 240px;
+    padding-top: 232px;
+    padding-bottom: 232px;
   }
 }
 
 @media screen and (max-width: 525px) {
   .page__login {
-    padding-top: 60px;
+    padding-top: 54px;
     width: calc(265/320*100%);
   }
 }
@@ -47,7 +48,7 @@
   .login__title {
     text-align: center;
     margin-top: 55px;
-    margin-bottom: 85px;
+    margin-bottom: 74px;
   }
 }
 
