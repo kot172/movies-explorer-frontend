@@ -6,10 +6,6 @@ import Techs from "../Techs/Techs";
 import AboutMe from "../AboutMe/AboutMe";
 import Portfolio from "../Portfolio/Portfolio";
 import NavTab from "../NavTab/NavTab";
-import SearchForm from "../SearchForm/SearchForm";
-import MoviesCardList from "../MoviesCardList/MoviesCardList";
-import { movies, saveMovies } from "../../utils/constants";
-import { useState, useEffect } from "react";
 import Profile from "../Profile/Profile";
 import Login from "../Login/Login";
 import PageNotFound from '../PageNotFound/PageNotFound';
@@ -48,10 +44,6 @@ export default function Main({
             </>,
           
 
-          movies: 
-          <>
-          <Movies savedMovies={savedMovies} addMovie={addMovie} setIsError={setIsError} />
-          </>,
            movies:
            <>
              <Movies savedMovies={savedMovies} addMovie={addMovie} setIsError={setIsError} />

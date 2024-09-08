@@ -3,9 +3,7 @@ import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Main from './Main/Main';
-import Register from './Register/Register';
 import { useState } from 'react';
-import PageNotFound from './PageNotFound/PageNotFound';
 import { useCallback, useEffect } from 'react';
 import apiMain from '../utils/MainApi';
 import SendContext from '../contexts/SendContext';
@@ -141,84 +139,84 @@ function App() {
 
   return (
     <div className='page'>
-    <div className='page__container'>
-      
-
-    {isCheckToken ? <Preloader /> :
-        <CurrentUserContext.Provider value={currentUser}>
-          <SendContext.Provider value={isSend}>
-            <ErrorContext.Provider value={isError}>
-
-<Routes>
-<Route path='/signin' element={
-                  loggedIn ? <Navigate to='/movies' replace /> :
-                    <Main name='signin' onLogin={handleLogin} setIsError={setIsError} />
-                } />
-
-<Route path='/signup' element={
-                  loggedIn ? <Navigate to='/movies' replace /> :
-                    <Main name='signup' onRegister={handleRegister} setIsError={setIsError} />
-                } />   
-
-<Route path='/profile' element={<ProtectedRoute
-                  element={ProtectedPage}
-                  name='profile'
-                  loggedIn={loggedIn}
-                  logOut={logOut}
-                  editUserData={editUserData}
-                  setIsError={setIsError}
-                  isSuccess={isSuccess}
-                  setSuccess={setSuccess}
-                  setIsEdit={setIsEdit}
-                  isEdit={isEdit}
-                />
-                } />
-
-<Route path='/' element={
-                  <>
-                    <Header name='home' loggedIn={loggedIn} />
-                    <Main name='home' />
-                    <Footer />
-                  </>
-                } />
-
-        <Route path='/movies' element={<ProtectedRoute
-                  element={ProtectedPage}
-                  name='movies'
-                  savedMovies={savedMovies}
-                  addMovie={handleToggelMovie}
-                  loggedIn={loggedIn}
-                  setIsError={setIsError}
-                />
-                } />
-
-  <Route path='/saved-movies' element={<ProtectedRoute
-                  element={ProtectedPage}
-                  name='savedmovies'
-                  onDelete={handleDeleteMovie}
-                  savedMovies={savedMovies}
-                  loggedIn={loggedIn}
-                  setIsError={setIsError}
-                />
-                } />
-
-                                              
+      <div className='page__container'>
 
 
-</Routes>
+        {isCheckToken ? <Preloader /> :
+          <CurrentUserContext.Provider value={currentUser}>
+            <SendContext.Provider value={isSend}>
+              <ErrorContext.Provider value={isError}>
 
-</ErrorContext.Provider>
-          </SendContext.Provider>
-        </CurrentUserContext.Provider>
-      }
+                <Routes>
+                  <Route path='/signin' element={
+                    loggedIn ? <Navigate to='/movies' replace /> :
+                      <Main name='signin' onLogin={handleLogin} setIsError={setIsError} />
+                  } />
 
-    <div className="App">
-    
-    </div>
+                  <Route path='/signup' element={
+                    loggedIn ? <Navigate to='/movies' replace /> :
+                      <Main name='signup' onRegister={handleRegister} setIsError={setIsError} />
+                  } />
+
+                  <Route path='/profile' element={<ProtectedRoute
+                    element={ProtectedPage}
+                    name='profile'
+                    loggedIn={loggedIn}
+                    logOut={logOut}
+                    editUserData={editUserData}
+                    setIsError={setIsError}
+                    isSuccess={isSuccess}
+                    setSuccess={setSuccess}
+                    setIsEdit={setIsEdit}
+                    isEdit={isEdit}
+                  />
+                  } />
+
+                  <Route path='/' element={
+                    <>
+                      <Header name='home' loggedIn={loggedIn} />
+                      <Main name='home' />
+                      <Footer />
+                    </>
+                  } />
+
+                  <Route path='/movies' element={<ProtectedRoute
+                    element={ProtectedPage}
+                    name='movies'
+                    savedMovies={savedMovies}
+                    addMovie={handleToggelMovie}
+                    loggedIn={loggedIn}
+                    setIsError={setIsError}
+                  />
+                  } />
+
+                  <Route path='/saved-movies' element={<ProtectedRoute
+                    element={ProtectedPage}
+                    name='savedmovies'
+                    onDelete={handleDeleteMovie}
+                    savedMovies={savedMovies}
+                    loggedIn={loggedIn}
+                    setIsError={setIsError}
+                  />
+                  } />
 
 
 
-    </div></div>
+
+                </Routes>
+
+              </ErrorContext.Provider>
+            </SendContext.Provider>
+          </CurrentUserContext.Provider>
+        }
+
+        <div className="App">
+
+        </div>
+
+
+
+      </div></div>
   );
 }
 

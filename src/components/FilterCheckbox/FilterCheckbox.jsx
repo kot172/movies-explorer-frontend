@@ -2,11 +2,11 @@ import "./FilterCheckbox.css";
 
 export default function FilterCheckbox({ isFilter, onChange }) {
   return (
-    <label class="checkbox">
+    <label className="checkbox">
       <input
         type="checkbox"
         className="checkbox__input"
-        cheked={isFilter}
+        checked={isFilter}
         onChange={onChange}
         name="checkbox"
       />

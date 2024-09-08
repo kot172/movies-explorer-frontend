@@ -103,9 +103,8 @@ class ApiMain {
   
   /*создаю экземпляр класса Api*/
   const apiMain = new ApiMain({
-    baseUrl: 'api.nikita-diplom.nomoredomainsrocks.ru',
-    // baseUrl: 'mongodb://localhost:27017',
+    baseUrl: 'https://api.nikita-diplom.nomoredomainsrocks.ru',
+    // baseUrl: 'mongodb://127.0.0.1:27017/bitfilmsdb',
 
   });
-  
   export default apiMain
